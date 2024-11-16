@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="game.MainPage">
+
+    <StackLayout>
+        <Label Text="小朋友下樓梯" FontSize="40" HorizontalOptions="CenterAndExpand"/>
+        <Image Source="p1.png" WidthRequest="100" HeightRequest="200"/>
+        <Button Text="開始遊戲" FontSize="32" Clicked="Button_Clicked"/>
+        <Label Text="遊戲說明" FontSize="25" HorizontalOptions="CenterAndExpand"/>
+        <Label Text="控制人物移動到安全平台並存活下去。" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+        <Label Text="1. 按住左右螢幕控制人物往兩側移動。" FontSize="20" />
+        <Label Text="2. 碰到尖刺會扣生命值。" FontSize="20"/>
+        <Label Text="    (天花板-5 平台-3)" FontSize="20"/>
+        <Label Text="3. 耗盡生命值或掉到底部，遊戲結束。" FontSize="20"/>
+        <Label Text="4. 存活越久，分數越高。" FontSize="20"/>
+        <Label Text="    藍色普通平台 +1" FontSize="20"/>
+        <Label Text="    傳送帶/彈簧板 +2" FontSize="20"/>
+        <Label Text="    (經過)尖刺 +3" FontSize="20"/>
+    </StackLayout>
+</ContentPage>
