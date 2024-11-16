@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp;assembly=SkiaSharp"
+             xmlns:sf="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             xmlns:tt="clr-namespace:TouchTracking.Forms;assembly=TouchTracking.Forms"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="game.GamePage">
+    <ContentPage.Content>
+        <StackLayout x:Name="stacklayout">
+            <StackLayout.Effects>
+                <tt:TouchEffect Capture="True" TouchAction="TouchEffect_TouchAction"/>
+            </StackLayout.Effects>
+            <!--<Image Source="bg2.jpg" Aspect="AspectFill" />-->
+
+            <xct:MediaElement Source="ms-appx:///BGM.mp3" HeightRequest="0.1" x:Name="media" AutoPlay="False" IsLooping="True"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
